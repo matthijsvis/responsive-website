@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieuwport" content="width=device-width, initial-scale=1.o">
+    <title>responsive website</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+<!--header bovenaan-->
+<header>
+    <div class="merk">
+        <div class="br">Matthijs</div>
+        Vis
+    </div>
+    <ul>
+        <li><a href="#head-gall">Projecten</a></li>
+        <li><a href="#head-over">Over</a></li>
+        <li><a href="#head-conn">Contact</a></li>
+    </ul>
+</header>
+
+<main id="header">
+    <div class="binnenkomer">
+        <h1>Welkom!</h1>
+    </div>
+    <img class="headimage" src="foto/1.jpg">
+</main>
+
+<div class="headgallery" id="head-gall">
+    <h2>Projecten</h2>
+</div>
+<div class="img-gall">
+    <img class="foto" src="foto/4-1024x682.jpg">
+    <img class="foto" src="foto/5-1024x682.jpg">
+    <img class="foto" src="foto/6-1024x682.jpg">
+    <img class="foto" src="foto/7-1024x682.jpg">
+    <img class="foto" src="foto/8.jpg">
+    <img class="foto" src="foto/9-1024x682.jpg">
+    <img class="foto" src="foto/10-1024x682.jpg">
+    <img class="foto" src="foto/11-1024x682.jpg">
+</div>
+
+<div class="headgallery" id="head-over">
+    <h2>Over</h2>
+</div>
+
+<div class="contact-pos">
+    <div class="kaartje">
+        <img class="ava" src="foto/ava.png">
+        <p class="naamkaart">Matthijs Vis</p>
+        <p class="functiekaart">Student <br> Media & Applicatie <br> Technologie</p>
+        <p class="textkaart"> Mijn naam is Matthijs Vis. Ik zit op het TCR, Ik ben 18 jaar oud en woon in Rotterdam.</p>
+        <a href="#head-conn">
+            <p class="kaartcontact">Contact opnemen?</p>
+        </a>
+    </div>
+
+    <div class="cvkaart">
+        <p class="cvtekst">Download CV</p>
+        <div class="icoon">
+            <a href="foto/cvMatthijsVis.docx">
+                <i class="far fa-address-card fa-7x"></i>
+            </a>
+        </div>
+
+        <p class="cvtext">Indicatie voortgang</p>
+
+        <div class="alleprogress"> <!--container voor de progressbars-->
+
+            <div class="progressbar"><!--progressbar html-->
+                <div class="html"> HTML</div>
+            </div>
+
+            <div class="progressbar"><!--progressbar css-->
+                <div class="css"> CSS</div>
+            </div>
+
+            <div class="progressbar"> <!--progressbar javascript-->
+                <div class="java"> Javascript</div>
+            </div>
+
+            <div class="progressbar2"><!--progressbar php-->
+                <div class="php"> PHP</div>
+            </div>
+            <div class="update"><h2>Bars bijgewerkt op: 05-03-2018</h2></div>
+            <!--wanneer de progressbar voor het laatst is bijgewerkt-->
+        </div>
+    </div>
+
+    <div class="schoolkaartje">
+        <img class="schoolava" src="foto/Schermafbeelding 2018-02-20 om 10.56.07.png"/>
+        <p class="naamkaart">Techniek College Rotterdam</p>
+        <p class="functiekaart">MBO Onderwijs</p>
+        <p class="textkaart"> Het Techniek College gelegen in Rotterdam, geeft ICT onderwijs op MBO niveau. <br></p>
+        <a href="https://www.techniekcollegerotterdam.nl/">
+            <p class="kaartcontact">Naar de website?</p>
+        </a>
+    </div>
+
+</div>
+
+<div class="headgallery" id="head-conn">
+    <h2>Contact</h2>
+</div>
+
+<form>
+    <input type="text" name="naam" placeholder="Naam" class="form-mod">
+    <input type="email" name="email" placeholder="E-mail" class="form-mod">
+    <input type="text" name="onderwerp" placeholder="Onderwerp" class="form-mod">
+    <input type="text" name="bericht" placeholder="Bericht" class="form-mod">
+    <input type="button" name="verstuur" value="Verstuur" class="button-mod">
+</form>
+
+<footer>
+    <a href="#header" class="bovenop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+</footer>
+
+
+</body>
+</html>

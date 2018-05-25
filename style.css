@@ -1,0 +1,380 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: lightgrey 0 3px 5px;
+    display: flex;
+    position: fixed;
+    z-index: 3;
+}
+
+.merk{
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 3%;
+    letter-spacing: 3px;
+}
+
+.br{
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: large;
+    color: black;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+ul{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 3%;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: lighter;
+    font-size: larger;
+    color: black;
+    height: 100%;
+    padding: 10px 5px 10px 5px;
+}
+
+a:hover{
+    background-color: lightgrey;
+}
+
+.headimage{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.headgallery{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    box-shadow: lightgrey 0 1px 2px;
+    display: flex;
+    border-bottom: 2px solid lightgrey;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+    margin-left: 2%;
+    font-weight: lighter;
+}
+
+.img-gall{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1%;
+}
+
+.foto{
+    width: 25%;
+    height: 50%;
+}
+
+p{
+    width: 50%;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.kaartje{
+    width: 25%;
+    height: 40%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: lightgrey;
+    margin-bottom: 0;
+}
+
+.contact-pos{
+    width: 95%;
+    margin: 2.5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ava{
+    width: 100%;
+    height: 50%;
+}
+
+.naamkaart{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin-left: 25%;
+}
+
+.functiekaart{
+    font-weight: lighter;
+    font-size: 0.75rem;
+    margin-left: 25%;
+}
+
+.textkaart{
+    font-weight: normal;
+    font-size: 1rem;
+    margin-left: 25%;
+}
+
+.kaartcontact{
+    font-weight: bolder;
+    margin-left: 25%;
+    background-color: grey;
+    padding: 3%;
+}
+
+.kaartcontact:hover{
+    background-color: dimgray;
+}
+
+.schoolava{
+    width: 100%;
+}
+
+.schoolkaartje{
+    width: 25%;
+    height: auto;
+    background-color: lightgrey;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.infokaart{
+    font-size: 2rem;
+    margin: 0 8% 0 8%;
+}
+
+form{
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 100px;
+}
+
+.form-mod{
+    font-size: 1.5rem;
+    /*border-bottom: lightgrey;*/
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    border-left: 1px solid black;
+    border-radius: 5px;
+}
+
+.button-mod{
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    border-left: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+}
+
+input[type="text"], select{
+    outline: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 620px) {
+    .foto {
+        width: 50%;
+    }
+    .contact-pos{
+        width: 95%;
+        margin: 2.5%;
+        display: flex;
+        flex-direction: column;
+    }
+    .kaartje{
+        width: 100%;
+    }
+    .schoolkaartje{
+        width: 100%;
+    }
+    .cvkaart{
+        width: 100% !important;
+    }
+    .alleprogress{
+        width: 100%;
+    }
+    .button-mod{
+        width: 100%;
+    }
+    li{
+        font-size: x-small;
+    }
+    .binnenkomer{
+        font-size: x-small;
+    }
+}
+
+.alleprogress{/*positioneerd en geeft waarden mee aan alle progresbars*/
+    width: 80%;
+    height: auto;
+    opacity: 0.8;
+    padding: 25px 25px 0 25px;
+    margin:0 auto;
+    margin-bottom: 50px;
+    z-index: 1;
+}
+.progressbar{/*geef alle onderliggende progressbars waarden*/
+    width: 90%;
+    height: 25px;
+    background-color: darkgrey;
+    margin:0 auto;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+.progressbar2{/*geeft waarden mee aan de bovenliggende progressbars*/
+    width: 90%;
+    height: 25px;
+    background-color: darkgrey;
+    margin:0 auto;
+    border-radius: 25px;
+}
+
+.html{/*geeft waarden aan individuele progressbars*/
+    width:93%;
+    height:25px;
+    background-color: red;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 3%;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+
+.css{/*geeft waarden aan individuele progressbars*/
+    width:90%;
+    height:25px;
+    background-color: green;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 3%;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+
+.java{/*geeft waarden aan individuele progressbars*/
+    width:86%;
+    height:25px;
+    background-color: orange;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 3%;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+
+.php{/*geeft waarden aan individuele progressbars*/
+    width:65%;
+    height:25px;
+    background-color: yellowgreen;
+    border-radius: 25px;
+    text-align: right;
+    padding-right: 3%;
+    font-weight: 600;
+    color: white;
+    line-height: 25px;
+}
+
+.update{/*laat zien wanneer de bars voor het laatst geupdate zijn*/
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+.cvkaart{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid grey;
+}
+
+a{
+    width: auto;
+    height: auto;
+}
+
+.icoon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cvtekst{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 100%;
+    margin: 0;
+}
+
+.cvtext{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    width: 90%;
+    border-top: 3px solid grey;
+    margin-left: 5%;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.bovenop{
+    border-radius: 25px;
+}
+
+.binnenkomer{
+    width: 15%;
+    margin-left: 42.5%;
+    height: 10%;
+    background-color: grey;
+    z-index: 2;
+    opacity: 0.5;
+    float: inside;
+    position: absolute;
+    margin-top: 25%;
+    text-align: center;
+    border-radius: 35px;
+}
+
